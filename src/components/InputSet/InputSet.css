@@ -1,0 +1,47 @@
+.InputSet {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.InputSet .InputSet__label {
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  text-transform: uppercase;
+}
+.InputSet .InputSet__input {
+  font-size: 1.1rem;
+  padding: 0.2rem 0.7rem 0.2rem 0.5rem;
+  background: none;
+  border: none;
+  border-radius: 0.4rem;
+}
+.InputSet .InputSet__input::-moz-placeholder {
+  color: rgba(33, 33, 33, 0.25);
+}
+.InputSet .InputSet__input:-ms-input-placeholder {
+  color: rgba(33, 33, 33, 0.25);
+}
+.InputSet .InputSet__input::placeholder {
+  color: rgba(33, 33, 33, 0.25);
+}
+.InputSet .InputSet__input:focus {
+  background-color: #f0f0f0;
+  color: rgb(33, 33, 33);
+}
+.InputSet .InputSet__textarea {
+  resize: none;
+  outline: none;
+  color: rgb(33, 33, 33);
+}
+.InputSet .InputSet__textarea::-moz-placeholder {
+  color: rgba(33, 33, 33, 0.25);
+}
+.InputSet .InputSet__textarea:-ms-input-placeholder {
+  color: rgba(33, 33, 33, 0.25);
+}
+.InputSet .InputSet__textarea::placeholder {
+  color: rgba(33, 33, 33, 0.25);
+}
+.InputSet .InputSet__select {
+  outline: none;
+}/*# sourceMappingURL=InputSet.css.map */

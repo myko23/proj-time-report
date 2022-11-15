@@ -1,0 +1,28 @@
+.UserIcon {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.UserIcon .UserIcon__image {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.UserIcon .UserIcon__name-set {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: center;
+  height: 100%;
+}
+.UserIcon .UserIcon__name-set .UserIcon__name {
+  font-weight: 600;
+  line-height: 1rem;
+}
+.UserIcon .UserIcon__name-set .UserIcon__title {
+  color: rgba(33, 33, 33, 0.25);
+  line-height: 1rem;
+  font-size: 0.95rem;
+}/*# sourceMappingURL=UserIcon.css.map */

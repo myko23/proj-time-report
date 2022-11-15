@@ -1,0 +1,15 @@
+@mixin displayFlex($type: "reg", $gap: 0, $direction: row) {
+	display: flex;
+	flex-direction: $direction;
+	gap: $gap;
+
+	@if $type == "center" {
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@mixin fitBox() {
+	height: 100%;
+	width: 100%;
+}

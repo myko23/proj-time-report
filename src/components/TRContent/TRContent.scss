@@ -1,0 +1,6 @@
+@use "../../styles/" as *;
+
+.TRContent {
+	@include fitBox();
+	overflow-y: auto;
+}

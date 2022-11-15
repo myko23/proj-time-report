@@ -1,0 +1,42 @@
+@use "../../styles/" as *;
+
+.Table {
+	width: 100%;
+	border-collapse: collapse;
+
+	.Table__header {
+		.Table__header-item {
+			font-size: 0.8rem;
+			font-weight: 600;
+			color: $black-50;
+			text-transform: uppercase;
+		}
+	}
+	.Table__row {
+		height: 2rem;
+		cursor: pointer;
+
+		.Table__row-item {
+			text-align: center;
+			font-size: 1.2rem;
+			font-weight: 400;
+			color: $black;
+			white-space: pre-wrap;
+		}
+
+		&:hover {
+			background-color: $selected;
+		}
+	}
+
+	.Table__row--selected {
+		background-color: $selected;
+	}
+}
+
+.Table__empty {
+	margin-top: 2zrem;
+	text-align: center;
+	font-size: 1.5rem;
+	color: $black-25;
+}

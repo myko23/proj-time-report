@@ -1,0 +1,14 @@
+@use "../../styles/" as *;
+
+.ClientItem {
+	font-size: 1.5rem;
+	cursor: pointer;
+	padding: 0.5rem 2rem;
+	&:hover {
+		background-color: $selected;
+	}
+}
+
+.ClientItem--selected {
+	background-color: $selected;
+}

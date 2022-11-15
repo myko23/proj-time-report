@@ -1,0 +1,22 @@
+@use "../../styles/" as *;
+
+.TimeReport {
+	@include fitBox();
+	@include displayFlex("reg");
+	background-color: $background;
+	.TimeReport__content-container {
+		@include fitBox();
+		@include displayFlex("reg", 1rem, column);
+
+		background-image: url("../../assets/images/Paint\ Abstract.jpg");
+		background-size: cover;
+		padding: 2.5rem;
+
+		.TimeReport__content {
+			overflow: hidden;
+			height: 100%;
+			background-color: $white;
+			border-radius: 1.5rem;
+		}
+	}
+}

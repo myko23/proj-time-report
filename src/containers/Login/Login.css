@@ -1,0 +1,60 @@
+.Login {
+  height: 100%;
+  width: 100%;
+  background-color: #dadada;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+}
+.Login .Login__logo {
+  width: 8rem;
+}
+.Login .Login__login-box {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  height: 75%;
+  width: 82%;
+  background: #fffcf9;
+  box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.25);
+}
+.Login .Login__login-box .Login__login-set {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 50rem;
+}
+.Login .Login__login-box .Login__login-set .Login__logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.Login .Login__login-box .Login__login-set .Login__text-set {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: flex-start;
+  height: 50%;
+}
+.Login .Login__login-box .Login__login-set .Login__text-set .Login__header {
+  margin-bottom: 4rem;
+  font-size: 3rem;
+  font-family: "Eczar";
+}
+.Login .Login__login-box .Login__login-set .Login__text-set .Login__input {
+  margin-bottom: 4rem;
+  position: relative;
+  right: 0.5rem;
+}
+.Login .Login__login-box .Login__image-container {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/images/Space Abstract.jpg");
+  background-size: cover;
+}/*# sourceMappingURL=Login.css.map */

@@ -1,0 +1,34 @@
+@use "../../styles/" as *;
+
+.Navigation {
+	@include displayFlex("reg", 1.5rem, column);
+
+	padding: 2rem 0;
+
+	background-color: $white;
+	width: 25rem;
+	height: 100%;
+
+	.Navigation__user {
+		padding: 0 1.5rem;
+	}
+	.Navigation__NavItems {
+		@include displayFlex("reg", 0, column);
+	}
+
+	.Navigation__logout-set {
+		margin-top: auto;
+		align-self: center;
+		width: 100%;
+		@include displayFlex("reg", 5px, column);
+		align-items: center;
+		.Navigation__logout {
+			color: $black-50;
+			width: fit-content;
+			cursor: pointer;
+		}
+	}
+	.Navigation__savetoexcel {
+		background-color: $excel-green;
+	}
+}

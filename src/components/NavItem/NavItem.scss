@@ -1,0 +1,27 @@
+@use "../../styles/" as *;
+
+.NavItem {
+	@include displayFlex("reg", 1rem);
+	align-items: center;
+	color: $black;
+	cursor: pointer;
+	padding: 0.6rem 1.5rem;
+
+	.NavItem__icon {
+		font-size: 1.5rem;
+	}
+
+	.NavItem__item {
+		font-size: 1.5rem;
+		font-weight: 600;
+		line-height: 1.5rem;
+	}
+
+	&:hover {
+		background-color: $selected;
+	}
+}
+
+.NavItem--selected {
+	background-color: $selected;
+}

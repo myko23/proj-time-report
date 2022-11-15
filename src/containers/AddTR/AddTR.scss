@@ -1,0 +1,37 @@
+@use "../../styles/" as *;
+
+.AddTR {
+	@include displayFlex("reg", 0, column);
+	height: 25rem;
+	width: 20rem;
+	border-radius: 20px;
+	padding: 1.5rem;
+	background-color: $white;
+
+	.AddTR__header-container {
+		@include displayFlex("reg");
+		align-items: center;
+		text-transform: uppercase;
+		color: $black;
+		font-weight: bold;
+
+		.AddTR__icon {
+			color: $black-50;
+			margin-left: auto;
+			font-size: 1.2rem;
+			cursor: pointer;
+
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+	.AddTR__input-container {
+		@include displayFlex("reg", 1rem, column);
+		margin-top: 2rem;
+	}
+
+	.AddTR__add-button {
+		margin-top: auto;
+	}
+}

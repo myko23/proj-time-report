@@ -1,0 +1,36 @@
+.Navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  background-color: #ffffff;
+  width: 25rem;
+  height: 100%;
+}
+.Navigation .Navigation__user {
+  padding: 0 1.5rem;
+}
+.Navigation .Navigation__NavItems {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.Navigation .Navigation__logout-set {
+  margin-top: auto;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.Navigation .Navigation__logout-set .Navigation__logout {
+  color: rgba(33, 33, 33, 0.5);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+.Navigation .Navigation__savetoexcel {
+  background-color: #31be7d;
+}/*# sourceMappingURL=Navigation.css.map */

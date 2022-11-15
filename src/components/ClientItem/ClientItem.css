@@ -1,0 +1,12 @@
+.ClientItem {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+}
+.ClientItem:hover {
+  background-color: #f0f0f0;
+}
+
+.ClientItem--selected {
+  background-color: #f0f0f0;
+}/*# sourceMappingURL=ClientItem.css.map */

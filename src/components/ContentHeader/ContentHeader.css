@@ -1,0 +1,46 @@
+.ContentHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  background-color: #ffffff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+.ContentHeader .ContentHeader__label {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.ContentHeader .ContentHeader__separator {
+  height: 1.5rem;
+  border-left: 2px solid rgba(33, 33, 33, 0.25);
+}
+.ContentHeader .ContentHeader__actions {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.ContentHeader .ContentHeader__actions .ContentHeader__date {
+  font-size: 1.1rem;
+  width: 6rem;
+  border: none;
+  color: rgba(33, 33, 33, 0.5);
+}
+.ContentHeader .ContentHeader__actions .ContentHeader__client-icon {
+  font-size: 1.2rem;
+  color: rgba(33, 33, 33, 0.25);
+  cursor: pointer;
+}
+.ContentHeader .ContentHeader__actions .ContentHeader__client-icon--client-add {
+  color: #0083ff;
+}
+.ContentHeader .ContentHeader__actions .ContentHeader__client-icon--client-delete {
+  color: red;
+}
+.ContentHeader .ContentHeader__actions .ContentHeader__client-icon--plus {
+  margin-left: 1rem;
+}/*# sourceMappingURL=ContentHeader.css.map */

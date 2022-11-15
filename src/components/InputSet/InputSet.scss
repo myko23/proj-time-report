@@ -1,0 +1,39 @@
+@use "../../styles/" as *;
+
+.InputSet {
+	@include displayFlex("reg", 0.2rem, column);
+
+	.InputSet__label {
+		font-size: 1rem;
+		padding-left: 0.5rem;
+		text-transform: uppercase;
+	}
+	.InputSet__input {
+		font-size: 1.1rem;
+		padding: 0.2rem 0.7rem 0.2rem 0.5rem;
+		background: none;
+		border: none;
+		border-radius: 0.4rem;
+
+		&::placeholder {
+			color: $black-25;
+		}
+
+		&:focus {
+			background-color: $selected;
+			color: $black;
+		}
+	}
+	.InputSet__textarea {
+		resize: none;
+		outline: none;
+		color: $black;
+
+		&::placeholder {
+			color: $black-25;
+		}
+	}
+	.InputSet__select {
+		outline: none;
+	}
+}

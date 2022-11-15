@@ -1,0 +1,28 @@
+@use "../../styles/" as *;
+
+.PrimaryButton {
+	padding: 0.2rem;
+	font-size: 1rem;
+
+	background: $primary-color;
+	border-radius: 10px;
+	color: white;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+
+	&:hover {
+		background-color: #3a9fff;
+	}
+}
+
+.PrimaryButton--disabled {
+	border: 1px solid $primary-color;
+	background: none;
+	color: $primary-color;
+
+	cursor: default;
+
+	&:hover {
+		background-color: white;
+	}
+}

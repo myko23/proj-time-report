@@ -1,0 +1,34 @@
+.Table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.Table .Table__header .Table__header-item {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(33, 33, 33, 0.5);
+  text-transform: uppercase;
+}
+.Table .Table__row {
+  height: 2rem;
+  cursor: pointer;
+}
+.Table .Table__row .Table__row-item {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(33, 33, 33);
+  white-space: pre-wrap;
+}
+.Table .Table__row:hover {
+  background-color: #f0f0f0;
+}
+.Table .Table__row--selected {
+  background-color: #f0f0f0;
+}
+
+.Table__empty {
+  margin-top: 2zrem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgba(33, 33, 33, 0.25);
+}/*# sourceMappingURL=Table.css.map */

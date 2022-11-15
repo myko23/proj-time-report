@@ -1,0 +1,31 @@
+@use "../../styles/" as *;
+
+.InputAdd {
+	@include fitBox();
+	@include displayFlex("reg", 2rem);
+	align-items: center;
+
+	.InputAdd__add-input {
+		width: 100%;
+		font-size: 1.1rem;
+		padding: 0.35rem 1.5rem;
+		border-radius: 15px;
+		border: 1px solid $black-25;
+
+		&::placeholder {
+			color: $black-25;
+		}
+		&:focus {
+			border: 1px solid $primary-color;
+		}
+	}
+
+	.InputAdd__add-button {
+		font-size: 2rem;
+		color: $black-25;
+	}
+	.InputAdd__add-button--focused {
+		color: $primary-color;
+		cursor: pointer;
+	}
+}

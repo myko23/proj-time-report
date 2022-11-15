@@ -1,0 +1,24 @@
+.NavItem {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  color: rgb(33, 33, 33);
+  cursor: pointer;
+  padding: 0.6rem 1.5rem;
+}
+.NavItem .NavItem__icon {
+  font-size: 1.5rem;
+}
+.NavItem .NavItem__item {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+.NavItem:hover {
+  background-color: #f0f0f0;
+}
+
+.NavItem--selected {
+  background-color: #f0f0f0;
+}/*# sourceMappingURL=NavItem.css.map */

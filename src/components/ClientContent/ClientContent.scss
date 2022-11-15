@@ -1,0 +1,26 @@
+@use "../../styles/" as *;
+
+.ClientContent {
+	@include fitBox();
+	@include displayFlex("reg", 0, column);
+	.ClientContent__clients {
+		@include displayFlex("reg", 0, column);
+		padding: 2rem 0;
+		height: 100%;
+		overflow-y: auto;
+	}
+
+	.ClientContent__add-container {
+		@include displayFlex("center");
+		height: 4rem;
+		width: 100%;
+		box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.25);
+		padding: 2rem;
+	}
+
+	.ClientContent__empty {
+		text-align: center;
+		font-size: 1.5rem;
+		color: $black-25;
+	}
+}

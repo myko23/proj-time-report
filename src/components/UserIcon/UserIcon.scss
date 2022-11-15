@@ -1,0 +1,25 @@
+@use "../../styles/" as *;
+
+.UserIcon {
+	@include displayFlex("reg", 10px);
+	.UserIcon__image {
+		height: 3rem;
+		width: 3rem;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+	.UserIcon__name-set {
+		@include displayFlex("reg", 3px, column);
+		justify-content: center;
+		height: 100%;
+		.UserIcon__name {
+			font-weight: 600;
+			line-height: 1rem;
+		}
+		.UserIcon__title {
+			color: $black-25;
+			line-height: 1rem;
+			font-size: 0.95rem;
+		}
+	}
+}

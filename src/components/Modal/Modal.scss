@@ -1,0 +1,23 @@
+@use "../../styles/" as *;
+
+.Modal {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	@include displayFlex("center");
+
+	.Modal__overlay {
+		@include fitBox();
+		background-color: black;
+		opacity: 0.25;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+	.Modal__children {
+		z-index: 1;
+	}
+}

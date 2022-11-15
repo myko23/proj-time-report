@@ -1,0 +1,31 @@
+.ClientContent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.ClientContent .ClientContent__clients {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 2rem 0;
+  height: 100%;
+  overflow-y: auto;
+}
+.ClientContent .ClientContent__add-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 100%;
+  box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+}
+.ClientContent .ClientContent__empty {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgba(33, 33, 33, 0.25);
+}/*# sourceMappingURL=ClientContent.css.map */

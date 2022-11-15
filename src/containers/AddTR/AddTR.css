@@ -1,0 +1,37 @@
+.AddTR {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  height: 25rem;
+  width: 20rem;
+  border-radius: 20px;
+  padding: 1.5rem;
+  background-color: #ffffff;
+}
+.AddTR .AddTR__header-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  text-transform: uppercase;
+  color: rgb(33, 33, 33);
+  font-weight: bold;
+}
+.AddTR .AddTR__header-container .AddTR__icon {
+  color: rgba(33, 33, 33, 0.5);
+  margin-left: auto;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.AddTR .AddTR__header-container .AddTR__icon:hover {
+  color: red;
+}
+.AddTR .AddTR__input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.AddTR .AddTR__add-button {
+  margin-top: auto;
+}/*# sourceMappingURL=AddTR.css.map */

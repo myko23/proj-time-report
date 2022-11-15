@@ -1,0 +1,47 @@
+@use "../../styles/" as *;
+
+.ContentHeader {
+	@include displayFlex("reg", 1rem);
+	align-items: center;
+	background-color: $white;
+	width: fit-content;
+	padding: 0.5rem 1rem;
+	border-radius: 2rem;
+
+	.ContentHeader__label {
+		font-size: 1.7rem;
+		font-weight: 600;
+	}
+	.ContentHeader__separator {
+		height: 1.5rem;
+		border-left: 2px solid $black-25;
+	}
+	.ContentHeader__actions {
+		@include displayFlex("reg", 1rem);
+		align-items: center;
+
+		.ContentHeader__date {
+			font-size: 1.1rem;
+			width: 6rem;
+			border: none;
+			color: $black-50;
+		}
+
+		.ContentHeader__client-icon {
+			font-size: 1.2rem;
+			color: $black-25;
+
+			cursor: pointer;
+		}
+		.ContentHeader__client-icon--client-add {
+			color: $primary-color;
+		}
+		.ContentHeader__client-icon--client-delete {
+			color: $red;
+		}
+
+		.ContentHeader__client-icon--plus {
+			margin-left: 1rem;
+		}
+	}
+}

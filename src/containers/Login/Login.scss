@@ -1,0 +1,57 @@
+@use "../../styles/" as *;
+
+.Login {
+	@include fitBox();
+	background-color: $background;
+	@include displayFlex("center");
+	.Login__logo {
+		width: 8rem;
+	}
+
+	.Login__login-box {
+		@include displayFlex("reg");
+		height: 75%;
+		width: 82%;
+		background: $beige;
+
+		box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.25);
+
+		.Login__login-set {
+			@include displayFlex("center");
+			position: relative;
+
+			height: 100%;
+			width: 50rem;
+
+			.Login__logo {
+				position: absolute;
+				top: 1rem;
+				left: 1rem;
+			}
+
+			.Login__text-set {
+				@include displayFlex("reg", 0, column);
+				align-items: flex-start;
+				height: 50%;
+
+				.Login__header {
+					margin-bottom: 4rem;
+					font-size: 3rem;
+					font-family: $primary-font;
+				}
+
+				.Login__input {
+					margin-bottom: 4rem;
+					position: relative;
+					right: 0.5rem;
+				}
+			}
+		}
+		.Login__image-container {
+			height: 100%;
+			width: 100%;
+			background-image: url("../../assets/images/Space Abstract.jpg");
+			background-size: cover;
+		}
+	}
+}

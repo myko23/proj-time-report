@@ -1,0 +1,22 @@
+.PrimaryButton {
+  padding: 0.2rem;
+  font-size: 1rem;
+  background: #0083ff;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+.PrimaryButton:hover {
+  background-color: #3a9fff;
+}
+
+.PrimaryButton--disabled {
+  border: 1px solid #0083ff;
+  background: none;
+  color: #0083ff;
+  cursor: default;
+}
+.PrimaryButton--disabled:hover {
+  background-color: white;
+}/*# sourceMappingURL=PrimaryButton.css.map */
