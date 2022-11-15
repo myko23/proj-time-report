@@ -6,6 +6,7 @@ const slice = createSlice({
 	name: "state",
 	initialState: {
 		login: false,
+		user: "Jane Doe",
 		content: "clients",
 		selected: {
 			clientid: 0,
@@ -163,6 +164,9 @@ const slice = createSlice({
 		currentDateSet: (state, action) => {
 			state.selected.currentdate = action.payload;
 		},
+		nameSet: (state, action) => {
+			state.user = action.payload;
+		},
 	},
 });
 
@@ -182,6 +186,7 @@ const {
 	reportUpdated,
 	updateReportModalShow,
 	currentDateSet,
+	nameSet,
 } = slice.actions;
 
 export const initializedData = (dispatch) => (data) => {
@@ -235,6 +240,9 @@ export const showUpdateReportModal = (dispatch) => (visible) => {
 };
 export const setCurrentDate = (dispatch) => (date) => {
 	dispatch(currentDateSet(date));
+};
+export const setName = (dispatch) => (name) => {
+	dispatch(nameSet(name));
 };
 
 export const getState = (state) => state;

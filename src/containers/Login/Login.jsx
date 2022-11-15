@@ -3,9 +3,11 @@ import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
 import "./Login.css";
 import Logo from "../../assets/images/Logo.svg";
 import { useDispatch } from "react-redux";
-import { initializedData, onLogin } from "../../store/reducer";
+import { initializedData, onLogin, setName } from "../../store/reducer";
+import { useState } from "react";
 
 function Login() {
+	const [nameIn, setNameIn] = useState("");
 	const dispatch = useDispatch();
 	return (
 		<div className="Login">
@@ -18,6 +20,8 @@ function Login() {
 							className="Login__input"
 							label="Name"
 							placeholder="Insert Name Here"
+							value={nameIn}
+							setValue={setNameIn}
 						/>
 						<PrimaryButton
 							onClick={() => {
@@ -25,6 +29,7 @@ function Login() {
 									localStorage.getItem("timereportdata");
 								const data = JSON.parse(response);
 								if (data) initializedData(dispatch)(data);
+								setName(dispatch)(nameIn);
 								onLogin(dispatch);
 							}}
 							label="LOGIN"

@@ -2,9 +2,12 @@ import React from "react";
 import "./UserIcon.css";
 import defaultUser from "../../assets/images/User Default.jpg";
 import cls from "classnames";
+import { useSelector } from "react-redux";
+import { getState } from "../../store/reducer";
 
 const UserIcon = ({ className }) => {
-	let user;
+	const { user } = useSelector(getState);
+
 	return (
 		<div className={cls("UserIcon", className)}>
 			<img className="UserIcon__image" src={defaultUser} alt="User" />
